@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div id="join" class="wrapper d-flex-column flex-column align-center">
+    <div class="d-flex j-center">
+        <input id="username" type="text" placeholder="username" />
+    </div>
+    <div id="joinRoom" class="d-flex flex-column align-center">
+        <button id="joinBtn" class="default-btn bg-green">Join Room</button>
+        <input id="roomIdInput" type="text" placeholder="Room ID" />
+    </div>
+    <div id="createRoom" class="d-flex j-center">
+        <button id="createBtn" class="default-btn bg-midblue">Create Room</button>
+    </div>
+</div>
+<div id="chatbox">
+    <div class="id">Room ID: <span class="roomId"></span></div>
+    <div class="messages">
+    </div>
+    <div id="sendMessage">
+        <input id="messageInput" type="text" value="" />
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+
+
+<script src="~/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>
